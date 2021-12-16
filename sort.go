@@ -1,13 +1,13 @@
 package simple
 
-import "sort"
+import "constraints"
 
-func Sort(v sort.Interface) {
-	n := v.Len()
+func Sort[T constraints.Ordered](v []T) {
+	n := len(v)
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
-			if v.Less(i, j) {
-				v.Swap(i, j)
+			if v[i] < v[j] {
+				v[i], v[j] = v[j], v[i]
 			}
 		}
 	}
