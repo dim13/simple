@@ -1,6 +1,6 @@
 package simple
 
-import "constraints"
+import "golang.org/x/exp/constraints"
 
 func Sort[T constraints.Ordered](v []T) {
 	n := len(v)
