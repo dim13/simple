@@ -1,5 +1,5 @@
 module github.com/dim13/simple
 
-go 1.19
+go 1.20
 
-require golang.org/x/exp v0.0.0-20220907003533-145caa8ea1d0
+require golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b

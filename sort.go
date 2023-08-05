@@ -2,11 +2,11 @@ package simple
 
 import "golang.org/x/exp/constraints"
 
-func Sort[T constraints.Ordered](v []T) {
-	for i := 1; i < len(v); i++ {
+func Sort[S ~[]E, E constraints.Ordered](x S) {
+	for i := 1; i < len(x); i++ {
 		for j := 0; j < i; j++ {
-			if v[i] < v[j] {
-				v[i], v[j] = v[j], v[i]
+			if x[i] < x[j] {
+				x[i], x[j] = x[j], x[i]
 			}
 		}
 	}
