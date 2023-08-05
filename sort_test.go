@@ -1,10 +1,9 @@
 package simple
 
 import (
+	"slices"
 	"sort"
 	"testing"
-
-	"golang.org/x/exp/slices"
 )
 
 func TestSort(t *testing.T) {
