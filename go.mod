@@ -1,3 +1,3 @@
 module github.com/dim13/simple
 
-go 1.23
+go 1.26
